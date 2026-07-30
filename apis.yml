@@ -1,22 +1,83 @@
 aid: media-chain
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/media-chain.png
 name: Media Chain
-description: Media Chain is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mediachain (Mediachain Labs) was a decentralized universal media library and
+  attribution protocol built on IPFS and blockchain technology, designed to let
+  creators and applications collaborate on open metadata about creative works and
+  track the provenance and ownership of online images and other media. Founded in
+  2016 with seed funding from Andreessen Horowitz and Union Square Ventures, the
+  company was acqui-hired by Spotify in April 2017 to help build fair,
+  blockchain-based royalty attribution for rightsholders. The company is now
+  defunct and its primary domain (mediachain.io) is a parked page, but its
+  open-source protocol, design documentation, Protocol Buffer definitions, and
+  first-party client libraries (the `aleph`/`mcclient` JavaScript client on npm and
+  the `mediachain-client` Python reader on PyPI) remain public under the
+  github.com/mediachain organization. This profile was surfaced as an a16z
+  portfolio company and enriched from its surviving open-source surface.
 url: https://raw.githubusercontent.com/api-evangelist/media-chain/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: acquired
+x-status-note: Acqui-hired by Spotify in April 2017; project archived/defunct.
 x-backed-by:
 - a16z
+- Union Square Ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Media
+- Metadata
+- Blockchain
+- Decentralized
+- IPFS
+- Attribution
+- Music
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/mediachain
+- type: Documentation
+  url: https://github.com/mediachain/mediachain-docs
+- type: SourceCode
+  url: https://github.com/mediachain/mediachain
+- type: Packages
+  url: packages/media-chain-packages.yml
+- type: SDKs
+  url: packages/media-chain-packages.yml
+- type: CLI
+  url: cli/media-chain-cli.yml
+- type: Protobuf
+  name: Types
+  url: grpc/media-chain-types.proto
+- type: Protobuf
+  name: Datastore
+  url: grpc/media-chain-datastore.proto
+- type: Protobuf
+  name: Transactor
+  url: grpc/media-chain-transactor.proto
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
