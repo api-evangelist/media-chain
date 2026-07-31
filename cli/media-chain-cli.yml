@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mediachain/aleph
+notes: >-
+  First-party CLIs shipped by Mediachain Labs. The project is archived/defunct
+  (last releases 2017); commands documented here reflect the published README
+  and npm/PyPI packages, not a live hosted service.
+clis:
+  - name: mcclient
+    package: aleph (npm)
+    install: npm install -g aleph
+    binary: mcclient
+    description: >-
+      Command-line wrapper around the HTTP API exposed by a `concat` Mediachain
+      node. Connects by default to a local node at http://localhost:9002; the
+      target node is overridden with the global `--apiUrl` / `-p` flag.
+    global_flags:
+      - flag: "--apiUrl / -p"
+        description: URL of the remote node's HTTP API (default http://localhost:9002).
+    commands:
+      - id
+      - ping
+      - publish
+      - query
+      - status
+    source: https://github.com/mediachain/aleph
+  - name: mediachain
+    package: mediachain-client (PyPI)
+    install: pip install mediachain-client
+    binary: mediachain
+    description: Mediachain reader command-line interface (legacy oldchain client).
+    source: https://github.com/mediachain/oldchain-client

@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/mediachain
+notes: >-
+  Mediachain (Mediachain Labs) was a decentralized media-attribution protocol,
+  seed-funded by Andreessen Horowitz and Union Square Ventures in 2016 and
+  acqui-hired by Spotify in April 2017. The company is defunct and its primary
+  domain (mediachain.io) is now a parked page, but its first-party open-source
+  client libraries remain published on npm and PyPI and the GitHub org is public.
+packages:
+  - language: javascript
+    registry: npm
+    name: aleph
+    version: 1.7.0
+    url: https://www.npmjs.com/package/aleph
+    install: npm install aleph
+    official: true
+    description: >-
+      Mediachain client and JavaScript peer. Bundles the `mcclient` CLI, a
+      wrapper around the HTTP API exposed by the `concat` node, plus a
+      peer-to-peer node implementation.
+    repository: https://github.com/mediachain/aleph
+  - language: python
+    registry: pypi
+    name: mediachain-client
+    version: 0.1.14
+    url: https://pypi.org/project/mediachain-client/
+    install: pip install mediachain-client
+    official: true
+    description: Mediachain reader command-line interface, published by Mediachain Labs.
+    repository: https://github.com/mediachain/oldchain-client
