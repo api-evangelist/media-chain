@@ -50,6 +50,11 @@ tags:
 - Music
 apis: []
 common:
+- type: IssueTracker
+  url: https://github.com/mediachain/mediachain/issues
+- type: License
+  name: MIT
+  url: https://github.com/mediachain/mediachain/blob/master/LICENSE
 - type: GitHubOrganization
   url: https://github.com/mediachain
 - type: Documentation
